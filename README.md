@@ -1,4 +1,3 @@
-
 # EX-01-Datatypes-Operators
 ## AIM:
 Write a C program to read 3 characters one by one and print the characters in a reverse order.
@@ -14,33 +13,21 @@ Write a C program to read 3 characters one by one and print the characters in a 
 #include <stdio.h>
 int main() {
     char ch1, ch2, ch3,A,B,C;
-
     scanf(" %c", &ch1);
-
     scanf(" %c", &ch2);
-
     scanf(" %c", &ch3);
-
-
     printf("Characters in reverse order: %c %c %c\n", ch3, ch2, ch1);
-
     return 0;
 }
 ```
 ## OUTPUT:
-
 ![Screenshot 2025-04-26 095609](https://github.com/user-attachments/assets/50d61c86-4ef3-48f4-9145-ecc2a06504f8)
-
-
-
 ## RESULT:
 Thus the program to read 3 characters one by one and print the characters in a reverse order has been executed successfully.
-
 
 # EX-02- Conditional-Statements
 ## AIM:
 Write a C program to read A values and check whether A is positive number or not.
-
 # ALGORITHM:
 1.	Declare a variable to store the input value A.
 2.	Use the scanf function to read the value of A from the user.
@@ -48,49 +35,28 @@ Write a C program to read A values and check whether A is positive number or not
 4.	If A is greater than zero, print a message indicating that it's a positive number. 
 5.	Otherwise, print a message indicating that it's not a positive number.
 6.End the program.
-
 # PROGRAM:
 ```
 #include <stdio.h>
-
 int main() {
     int A;
-
     scanf("%d", &A);
     if (A > 0) {
         printf("The number is positive.\n");
     } else {
         printf("The number is not positive.\n");
     }
-
     return 0;
 }
 ```
-
 # OUTPUT:
-
-
-
 ![Screenshot 2025-04-26 095855](https://github.com/user-attachments/assets/bc064778-ed89-47b5-885e-dc480981548a)
-
-
-
-
-
-
-
-
 # RESULT:
 Thus the program to read A values and check whether A is positive number or not has been executed successfully.
  
- 
- 
-
-
 # EX-03- Operators-Expressions
 ## AIM:
 Write a program to find minimum between two fraction numbers using conditional operator or ternary operator.
-
 ## ALGORITHM:
 1.	Declare variables to store the two fraction numbers and the result.
 2.	Use the printf function to prompt the user to enter the first fraction number (numerator and denominator separately).
@@ -99,49 +65,26 @@ Write a program to find minimum between two fraction numbers using conditional o
 5.	Calculate the decimal values of both fractions by dividing the numerators by the denominators.
 6.	Use the conditional (ternary) operator to compare the decimal values and store the minimum value in the result variable.
 7.	Print the minimum value.
-
 ## PROGRAM:
-
 ```
 #include <stdio.h>
-
 int main() {
     int a, b, min;
-
     scanf("%d", &a);
-
     scanf("%d", &b);
-
     min = (a < b) ? a : b;
-
-
     printf("The minimum number is: %d\n", min);
-
     return 0;
 }
 ```
 ## OUTPUT:
-
-
-
-
 ![Screenshot 2025-04-26 100442](https://github.com/user-attachments/assets/3472038d-aa1e-45a4-b88d-b93698a56a31)
-
-
-
-
-
 ## RESULT:
 Thus the program to find minimum between two fraction numbers using conditional operator or ternary operator has been executed successfully.
 
-
-
-
 # EX-04- Using Conditional Statements
-
 ## AIM:
 Write a C program to check whether the input value is equal to 1 using simple if statement
-
 ## ALGORITHM:
 1.	Declare a variable to store the input value.
 2.	Use the scanf function to read the input value from the user.
@@ -149,41 +92,22 @@ Write a C program to check whether the input value is equal to 1 using simple if
 4.	If the condition in the if statement is true, print a message indicating that the input value is equal to 1.
 5.	Otherwise, print a message indicating that it's not equal to 1.
 6.	End the program.
-
 ## PROGRAM:
 ```
 #include <stdio.h>
-
 int main() {
     int value;
-
     scanf("%d", &value);
-
     if (value == 1) {
         printf("The value is equal to 1.\n");
     }
-
     return 0;
 }
 ```
-
 ## OUTPUT:
-
-
 ![Screenshot 2025-04-26 100636](https://github.com/user-attachments/assets/9fca2906-0a5b-4e2f-83ad-5750daf77aa7)
-
-
-
-
-
-
-
-	
-
 ## RESULT:
 Thus the program to check whether the input value is equal to 1 using simple if statement has been executed successfully
-
-
 
 # EX-05- Calculating Total, Percentage, And Division Using Conditional Statements 
 ## AIM:
@@ -205,18 +129,12 @@ c.	Else if percentage >= 36: Print “Division = Pass”
 ## PROGRAM:
 ```
 #include <stdio.h>
-
 int main() {
     int m1, m2, m3, total;
     float percentage;
-
     scanf("%d %d %d", &m1, &m2, &m3);
-
-    total = m1 + m2 + m3;
-    
+    total = m1 + m2 + m3; 
     percentage = total / 3.0;
-
-
     if (m1 < 35 || m2 < 35 || m3 < 35 || percentage < 35) {
         printf("Result: Fail\n");
     }
@@ -229,18 +147,12 @@ int main() {
     else {
         printf("Result: Pass\n");
     }
-
     printf("Total Marks = %d\n", total);
     printf("Percentage = %.2f%%\n", percentage);
-
     return 0;
 }
 ```
-
 ## OUTPUT:
 ![image](https://github.com/user-attachments/assets/5a5d010a-3629-47e5-bf57-9e8465aae74e)
-
-
 ## RESULT:
 The program successfully takes three subject marks, calculates the total and percentage, and correctly determines the division based on predefined grading logic.
-
